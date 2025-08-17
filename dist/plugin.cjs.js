@@ -1,5 +1,9 @@
+'use strict';
+
+var core = require('@capacitor/core');
+
 /// <reference types="@capacitor/cli" />
-export var KeyboardStyle;
+exports.KeyboardStyle = void 0;
 (function (KeyboardStyle) {
     /**
      * Dark keyboard.
@@ -22,8 +26,8 @@ export var KeyboardStyle;
      * @since 1.0.0
      */
     KeyboardStyle["Default"] = "DEFAULT";
-})(KeyboardStyle || (KeyboardStyle = {}));
-export var KeyboardResize;
+})(exports.KeyboardStyle || (exports.KeyboardStyle = {}));
+exports.KeyboardResize = void 0;
 (function (KeyboardResize) {
     /**
      * Only the `body` HTML element will be resized.
@@ -52,5 +56,9 @@ export var KeyboardResize;
      * @since 1.0.0
      */
     KeyboardResize["None"] = "none";
-})(KeyboardResize || (KeyboardResize = {}));
-//# sourceMappingURL=definitions.js.map
+})(exports.KeyboardResize || (exports.KeyboardResize = {}));
+
+const Keyboard = core.registerPlugin('Keyboard');
+
+exports.Keyboard = Keyboard;
+//# sourceMappingURL=plugin.cjs.js.map
