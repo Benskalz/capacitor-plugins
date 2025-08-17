@@ -1,3 +1,5 @@
+Capacitor Keyboard fork to fix keyboard height not being updated correctly on Android, see: https://github.com/ionic-team/capacitor-plugins/pull/2398
+
 # @capacitor/keyboard
 
 The Keyboard API provides keyboard display and visibility control, along with event tracking when the keyboard shows and hides.
